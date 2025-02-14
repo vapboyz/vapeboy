@@ -114,35 +114,36 @@
             font-weight: bold;
         }
 
-        /* Responsive Adjustments */
-        @media (max-width: 1024px) {
-            body {
-                font-size: 1.5rem; /* Slightly smaller text for tablets */
-            }
-
+        @media (max-width: 768px) {
             header {
-                font-size: 2.5rem;
+                font-size: 2rem;
+                padding: 15px 25px;
             }
 
             .header-text {
-                font-size: 1.25rem;
+                font-size: 1rem;
             }
 
             .item-grid {
-                gap: 25px;
-                padding: 25px;
+                grid-template-columns: repeat(2, 1fr); /* Two items per row */
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .item {
+                padding: 10px;
             }
 
             .item img {
-                max-height: 150px; /* Adjust image size for tablets */
+                max-height: 125px; /* Smaller image size */
             }
 
             .item-name {
-                font-size: 1.25rem;
+                font-size: 1rem; /* Smaller text for mobile */
             }
 
             .item-price {
-                font-size: 1rem;
+                font-size: 0.75rem; /* Smaller price text */
             }
         }
     </style>
