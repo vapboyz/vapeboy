@@ -16,7 +16,7 @@
         /* Header */
         header {
             background: linear-gradient(90deg, #000, #333);
-            padding: 15px 25px;
+            padding: 0px 25px;
             color: #fff;
             font-weight: bold;
             font-size: 3rem;
@@ -40,7 +40,7 @@
             background-color: #fff;
             margin: 0;
             color: #333;
-            font-size: 1.5rem;
+            font-size: 1.5rem; /* Larger default text for desktop/laptop */
             font-family: 'Poppins', Arial, sans-serif;
         }
 
@@ -52,7 +52,7 @@
 
         .sort-button {
             background-color: #333;
-            padding: 10px 25px;
+            padding: 5px 25px;
             color: #fff;
             border-radius: 10px;
             text-decoration: none;
@@ -67,14 +67,14 @@
         .slogan {
             margin: 25px;
             text-align: center;
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: bold;
         }
 
         /* Grid Layout */
         .item-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Larger items on desktops */
             gap: 25px;
             padding: 25px;
         }
@@ -98,22 +98,58 @@
         .item img {
             width: 100%;
             height: auto;
+            max-height: 200px; /* Dominant image size for larger screens */
+            object-fit: contain;
         }
 
         .item-name {
             margin: 10px 0;
+            font-size: 2rem; /* Slightly larger for desktop */
             font-weight: bold;
         }
 
         .item-price {
             color: #ff3b3b;
+            font-size: 1.5rem; /* Larger for desktop */
             font-weight: bold;
         }
 
         /* Responsive Adjustments */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
+            body {
+                font-size: 1.5rem; /* Slightly smaller text for tablets */
+            }
+
+            header {
+                font-size: 2.5rem;
+            }
+
+            .header-text {
+                font-size: 1.25rem;
+            }
+
+            .item-grid {
+                gap: 25px;
+                padding: 25px;
+            }
+
+            .item img {
+                max-height: 150px; /* Adjust image size for tablets */
+            }
+
+            .item-name {
+                font-size: 1.25rem;
+            }
+
+            .item-price {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 775px) {
             header {
                 font-size: 2rem;
+                padding: 15px 20px;
             }
 
             .header-text {
@@ -121,25 +157,44 @@
             }
 
             .slogan {
-                display: none;
+                display: none; /* Hide slogan for smaller screens */
             }
 
             .item-grid {
-                grid-template-columns: repeat(2, 1fr); /* Two items per row on smaller screens */
+                grid-template-columns: repeat(2, 1fr); /* Two items per row */
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .item {
+                padding: 10px;
+            }
+
+            .item img {
+                max-height: 125px; /* Smaller image size */
+            }
+
+            .item-name {
+                font-size: 1rem; /* Smaller text for mobile */
+            }
+
+            .item-price {
+                font-size: 0.75rem; /* Smaller price text */
             }
         }
 
-        @media (min-width: 1440px) {
+        @media (min-width: 1450px) {
             body {
-                font-size: 1.8rem; /* Slightly larger text on larger screens */
+                font-size: 1.75rem; /* Larger text on widescreens */
             }
 
             .item-grid {
-                gap: 30px;
+                gap: 50px;
             }
 
             header {
                 font-size: 3.5rem;
+                padding: 25px 35px;
             }
         }
     </style>
