@@ -37,8 +37,14 @@
             background-color: #fff;
             margin: 0;
             color: #333;
-            font-size: 1.75rem;
+            font-size: 1.5rem;
             font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        .slogan {
+            margin: 25px;
+            text-align: center;
+            font-weight: bold;
         }
 
         .sort-section {
@@ -59,13 +65,6 @@
 
         .sort-button:hover {
             background-color: #555;
-        }
-
-        .slogan {
-            margin: 25px;
-            text-align: center;
-            font-size: 1.75rem;
-            font-weight: bold;
         }
 
         .item-grid {
@@ -110,10 +109,17 @@
             font-weight: bold;
         }
 
+        .solid-border {
+            border: 1px;
+            border-style: solid;
+            border-color: #ebebeb;
+            margin: 25px 0;
+        }
+
         @media (max-width: 768px) {
             header {
                 font-size: 2rem;
-                padding: 0px 5px;
+                padding: 5px 15px;
             }
 
             .header-text {
@@ -121,7 +127,17 @@
             }
 
             .slogan {
-                margin: 0px 15px;
+                margin: 15px;
+                font-size: 1rem;
+            }
+
+            .sort-section {
+                margin: 15px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .sort-button {
                 font-size: 1rem;
             }
 
@@ -146,10 +162,12 @@
             .item-price {
                 font-size: 0.75rem;
             }
-            
-            .sort-button {
-                margin: 0px 15px;
-                font-size: 1rem;
+
+            .solid-border {
+                border: 1px;
+                border-style: solid;
+                border-color: #ebebeb;
+                margin: 10px 0;
             }
         }
     </style>
@@ -162,14 +180,14 @@
     <div class="sort-section">
         <a href="FRONTPAGE.html" class="sort-button">TODOS</a>
     </div>
-    <hr style="border: 1px solid #ebebeb; margin: 15px 0;">
+    <hr class="solid-border">
 
-    <span class="slogan">CONOCE TODO NUESTRO CATALOGO!</span>
+    <span class="slogan">CONOCE TODO NUESTRO CATALOGO</span>
 
     <div class="item-grid">
         <a href="RIFBAR15.html" class="item">
-            <img src="RIFBAR15.png" alt="RIFBAR TURBO X">
-            <div class="item-name">RIFBAR TURBO X</div>
+            <img src="RIFBAR15.png" alt="RIFBAR TX">
+            <div class="item-name">RIFBAR TX</div>
             <div class="item-price">$320 MXN</div>
         </a>
         <a href="ELFBAR23.html" class="item">
