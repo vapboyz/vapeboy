@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAP BOYZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        header {
+            background: linear-gradient(90deg, #000, #333);
+            padding: 15px 25px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-text {
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        body {
+            margin: 0;
+            background-color: #fff;
+            color: #333;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        .sort-section {
+            margin: 25px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .sort-button {
+            background-color: #333;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.25s ease;
+        }
+
+        .sort-button:hover {
+            background-color: #555;
+        }
+
+        .item-grid {
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .item {
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #ebebeb;
+            transition: transform 0.25s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .item:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .item-name {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .item-price {
+            color: #ff3b3b;
+            font-size: 1rem;
+        }
+
+        .slogan {
+            margin: 25px;
+            text-align: center;
+            font-size: 1.2rem;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5rem;
+            }
+
+            .header-text {
+                font-size: 0.9rem;
+            }
+
+            .slogan {
+                display: none;
+            }
+
+            .item-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        VAP BOYZ
+        <span class="header-text">ENTREGAS PERSONALES (CHECAR HORARIOS)</span>
+    </header>
+
+    <div class="sort-section">
+        <a href="FRONTPAGE.html" class="sort-button">TODOS</a>
+    </div>
+    <hr style="border: 1px solid #ebebeb; margin: 25px 0;">
+
+    <span class="slogan">CONOCE TODA NUESTRA GAMA DE PRODUCTOS!</span>
+
+    <div class="item-grid">
+        <a href="RIFBAR15.html" class="item">
+            <img src="RIFBAR15.png" alt="RIFBAR TURBO X">
+            <div class="item-name">RIFBAR TURBO X</div>
+            <div class="item-price">$320 MXN</div>
+        </a>
+        <a href="ELFBAR23.html" class="item">
+            <img src="ELFBAR23.png" alt="ELFBAR GH">
+            <div class="item-name">ELFBAR GH</div>
+            <div class="item-price">$330 MXN</div>
+        </a>
+        <a href="WAKA27.html" class="item">
+            <img src="WAKA27.png" alt="WAKA DUO">
+            <div class="item-name">WAKA DUO</div>
+            <div class="item-price">$340 MXN</div>
+        </a>
+        <a href="WAKA36.html" class="item">
+            <img src="WAKA36.png" alt="WAKA BURST">
+            <div class="item-name">WAKA BURST</div>
+            <div class="item-price">$380 MXN</div>
+        </a>
+    </div>    
+</body>
+</html>
