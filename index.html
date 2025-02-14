@@ -6,14 +6,12 @@
     <title>VAP BOYZ</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* General Reset */
         body, h1, h2, h3, h4, h5, h6, p, a {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Header */
         header {
             background: linear-gradient(90deg, #000, #333);
             padding: 0px 25px;
@@ -34,13 +32,12 @@
             font-weight: bold;
         }
 
-        /* Body */
         body {
             overflow-x: hidden;
             background-color: #fff;
             margin: 0;
             color: #333;
-            font-size: 1.5rem; /* Larger default text for desktop/laptop */
+            font-size: 1.75rem;
             font-family: 'Poppins', Arial, sans-serif;
         }
 
@@ -67,14 +64,13 @@
         .slogan {
             margin: 25px;
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.75rem;
             font-weight: bold;
         }
 
-        /* Grid Layout */
         .item-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Larger items on desktops */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 25px;
             padding: 25px;
         }
@@ -98,19 +94,19 @@
         .item img {
             width: 100%;
             height: auto;
-            max-height: 200px; /* Dominant image size for larger screens */
+            max-height: 200px;
             object-fit: contain;
         }
 
         .item-name {
             margin: 10px 0;
-            font-size: 2rem; /* Slightly larger for desktop */
+            font-size: 2rem;
             font-weight: bold;
         }
 
         .item-price {
             color: #ff3b3b;
-            font-size: 1.5rem; /* Larger for desktop */
+            font-size: 1.5rem;
             font-weight: bold;
         }
 
@@ -125,11 +121,11 @@
             }
 
             .slogan {
-                font-size: 1rem; /* Smaller text for mobile */
+                font-size: 1rem;
             }
 
             .item-grid {
-                grid-template-columns: repeat(2, 1fr); /* Two items per row */
+                grid-template-columns: repeat(2, 1fr);
                 gap: 15px;
                 padding: 15px;
             }
@@ -139,15 +135,19 @@
             }
 
             .item img {
-                max-height: 125px; /* Smaller image size */
+                max-height: 125px;
             }
 
             .item-name {
-                font-size: 1rem; /* Smaller text for mobile */
+                font-size: 1rem;
             }
 
             .item-price {
-                font-size: 0.75rem; /* Smaller price text */
+                font-size: 0.75rem;
+            }
+            
+            .sort-button {
+                font-size: 1rem;
             }
         }
     </style>
@@ -162,7 +162,7 @@
     </div>
     <hr style="border: 1px solid #ebebeb; margin: 25px 0;">
 
-    <span class="slogan">CONOCE TODA NUESTRA GAMA DE PRODUCTOS!</span>
+    <span class="slogan">CONOCE TODO NUESTRO CATALOGO!</span>
 
     <div class="item-grid">
         <a href="RIFBAR15.html" class="item">
