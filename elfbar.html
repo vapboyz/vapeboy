@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELFBAR23 - VAP BOYZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        header {
+            background: linear-gradient(90deg, #000, #333);
+            padding: 15px 25px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-text {
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        body {
+            margin: 0;
+            background-color: #fff;
+            color: #333;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        .sort-section {
+            margin: 25px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .sort-button {
+            background-color: #333;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.25s ease;
+        }
+
+        .sort-button:hover {
+            background-color: #555;
+        }
+
+        .product-page {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            padding: 25px;
+        }
+
+        .product-image img {
+            width: 350px;
+            height: auto;
+            border: 2px solid #ebebeb;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 350px;
+        }
+
+        .product-title {
+            color: #000;
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .product-price {
+            color: #e63946;
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .flavor-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 15px 0;
+            list-style: none;
+        }
+
+        .flavor-list button {
+            font-size: 1rem;
+            padding: 5px 15px;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.25s ease;
+        }
+
+        .flavor-list button:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5rem;
+            }
+
+            .header-text {
+                font-size: 0.9rem;
+            }
+
+            .product-page {
+                flex-direction: column;
+            }
+
+            .product-details {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        VAP BOYZ
+        <span class="header-text">ENTREGAS PERSONALES (CHECAR HORARIOS)</span>
+    </header>
+
+    <div class="sort-section">
+        <a href="FRONTPAGE.html" class="sort-button">REGRESAR</a>
+    </div>
+    <hr style="border: 1px solid #ebebeb; margin: 25px 0;">
+
+    <div class="product-page">
+        <div class="product-image">
+            <img src="ELFBAR23.png" alt="ELFBAR GH">
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">ELFBAR GH</h1>
+            <p class="product-price">$330 MXN</p>
+            <div class="product-flavors">
+                <h2>SABORES DISPONIBLES:</h2>
+                <ul class="flavor-list">
+                    <li><button>BAJA SPLASH</button></li>
+                    <li><button>BLUE RAZZ ICE</button></li>
+                    <li><button>GRAPE ICE</button></li>
+                    <li><button>BLUEBERRY PEAR</button></li>
+                    <li><button>GREEN APPLE ICE</button></li>
+                    <li><button>ICE MINT</button></li>
+                    <li><button>LIME GRAPEFRUIT ICE</button></li>
+                    <li><button>KIWI DRAGON FRUIT</button></li>
+                    <li><button>PINEAPPLE PLUMS LIME MINT</button></li>
+                    <li><button>PEACH MANGO WATERMELON</button></li>
+                    <li><button>SAKURA GRAPE</button></li>
+                    <li><button>STRAWBERRY BANANA</button></li>
+                    <li><button>STRAWBERRY ICE</button></li>
+                    <li><button>WATERMELON ICE</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
