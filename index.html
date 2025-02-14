@@ -3,46 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VAP BOYZ</title>
+    <title>ELFBAR23 - VAP BOYZ</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        header {
-            background: linear-gradient(90deg, #000, #333);
-            padding: 0 25px;
-            color: #fff;
-            font-weight: bold;
-            font-size: 3rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            z-index: 1000;
-        }
-
-        .header-text {
-            font-size: 1.5rem;
-            color: #fff;
-        }
-
+        /* General Styles */
         body {
             overflow-x: hidden;
             background-color: #fff;
             margin: 0;
             color: #333;
-            font-weight: bold;
-            font-size: 1.5rem;
             font-family: 'Poppins', Arial, sans-serif;
         }
 
-        .sort-section, .slogan {
-            margin: 25px;
+        header {
+            background: linear-gradient(90deg, #000, #333);
+            padding: 0 1.5rem;
+            color: #fff;
+            font-weight: bold;
+            font-size: 2rem;
             display: flex;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-text {
+            font-size: 1rem;
+        }
+
+        .sort-section {
+            margin: 1rem;
+            display: flex;
         }
 
         .sort-button {
             background-color: #333;
-            padding: 5px 25px;
+            padding: 0.5rem 1.5rem;
             color: #fff;
             border-radius: 10px;
             text-decoration: none;
@@ -53,50 +51,133 @@
             background-color: #555;
         }
 
-        .item-grid {
-            padding: 0 25px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 25px;
+        .product-page {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            max-width: 100%;
+            justify-content: center;
         }
 
-        .item {
-            padding: 25px;
-            border-radius: 10px;
-            text-align: center;
-            border: 2px solid #ebebeb;
-            transition: transform 0.25s ease;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .item:hover {
-            transform: scale(1.05);
-            cursor: pointer;
-        }
-
-        .item img {
+        .product-image img {
             width: 100%;
+            max-width: 15rem;
             height: auto;
+            border: 2px solid #ebebeb;
+            border-radius: 10px;
         }
 
-        .item-name {
-            margin: 10px 0;
+        .product-details {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            align-items: center;
         }
 
-        .item-price {
-            color: #ff3b3b;
+        .product-title {
+            color: #000;
+            margin: 1rem 0;
+            font-size: 1.75rem;
+            text-align: center;
+        }
+
+        .product-price {
+            color: #e63946;
+            font-size: 1.5rem;
+            margin: 0.5rem 0 1rem;
+        }
+
+        .product-flavors h2 {
+            color: #000;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .flavor-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 0.5rem 0;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .flavor-list button {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.25s ease;
+        }
+
+        .flavor-list button:hover {
+            background-color: #555;
+        }
+
+        .slogan {
+            margin: 1rem;
+            text-align: center;
+            display: none; /* Default hidden */
+        }
+
+        hr {
+            border: 1px solid #ebebeb;
+            margin: 1.5rem 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            header {
+                font-size: 1.5rem;
+            }
+
+            .header-text {
+                font-size: 0.75rem;
+            }
+
+            .product-image img {
+                max-width: 12rem;
+            }
         }
 
         @media (max-width: 768px) {
-            .item-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .product-page {
+                flex-direction: column;
+                align-items: center;
             }
-            header {
-                font-size: 2rem;
+
+            .product-image img {
+                max-width: 10rem;
             }
-            .header-text {
-                font-size: 1rem;
+
+            .flavor-list {
+                flex-direction: column;
+            }
+
+            .slogan {
+                display: block;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-page {
+                flex-wrap: wrap;
+            }
+
+            .product-image img {
+                max-width: 100%;
+            }
+
+            .flavor-list {
+                gap: 0.25rem;
+            }
+
+            .slogan {
+                display: none;
             }
         }
     </style>
@@ -108,33 +189,39 @@
     </header>
 
     <div class="sort-section">
-        <a href="FRONTPAGE.html" class="sort-button">TODOS</a>
+        <a href="FRONTPAGE.html" class="sort-button">REGRESAR</a>
     </div>
-    <hr style="border: 1px solid #ebebeb; margin: 25px 0;">
+    <hr>
 
-    <span class="slogan">CONOCE TODA NUESTRA GAMA DE PRODUCTOS!</span>
+    <span class="slogan">SELECCIONA UN SABOR Y POSTERIORMENTE MANDA CAPTURA AL WHATSSAP</span>
 
-    <div class="item-grid">
-        <a href="RIFBAR15.html" class="item">
-            <img src="RIFBAR15.png" alt="RIFBAR TURBO X">
-            <div class="item-name">RIFBAR TURBO X</div>
-            <div class="item-price">$320 MXN</div>
-        </a>
-        <a href="ELFBAR23.html" class="item">
+    <div class="product-page">
+        <div class="product-image">
             <img src="ELFBAR23.png" alt="ELFBAR GH">
-            <div class="item-name">ELFBAR GH</div>
-            <div class="item-price">$330 MXN</div>
-        </a>
-        <a href="WAKA27.html" class="item">
-            <img src="WAKA27.png" alt="WAKA DUO">
-            <div class="item-name">WAKA DUO</div>
-            <div class="item-price">$340 MXN</div>
-        </a>
-        <a href="WAKA36.html" class="item">
-            <img src="WAKA36.png" alt="WAKA BURST">
-            <div class="item-name">WAKA BURST</div>
-            <div class="item-price">$380 MXN</div>
-        </a>
-    </div>    
+        </div>
+        <div class="product-details">
+            <h1 class="product-title">ELFBAR GH</h1>
+            <p class="product-price">$330 MXN</p>
+            <div class="product-flavors">
+                <h2>SABORES DISPONIBLES:</h2>
+                <ul class="flavor-list">
+                    <li><button>BAJA SPLASH</button></li>
+                    <li><button>BLUE RAZZ ICE</button></li>
+                    <li><button>GRAPE ICE</button></li>
+                    <li><button>BLUEBERRY PEAR</button></li>
+                    <li><button>GREEN APPLE ICE</button></li>
+                    <li><button>ICE MINT</button></li>
+                    <li><button>LIME GRAPEFRUIT ICE</button></li>
+                    <li><button>KIWI DRAGON FRUIT</button></li>
+                    <li><button>PINEAPPLE PLUMS LIME MINT</button></li>
+                    <li><button>PEACH MANGO WATERMELON</button></li>
+                    <li><button>SAKURA GRAPE</button></li>
+                    <li><button>STRAWBERRY BANANA</button></li>
+                    <li><button>STRAWBERRY ICE</button></li>
+                    <li><button>WATERMELON ICE</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
