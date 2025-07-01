@@ -6,6 +6,12 @@
     <title>VAPE BOY</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
+        <script>
+        if (sessionStorage.getItem("authenticated") !== "true") {
+            window.location.href = "index.html";
+        }
+        </script>
+
         body, h1, h2, h3, h4, h5, h6, p, a {
             margin: 0;
             padding: 0;
