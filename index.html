@@ -196,15 +196,17 @@
     </div>
 
     <script>
-        function checkPassword() {
-            var inputPassword = document.getElementById("password").value;
-            var errorMessage = document.getElementById("error-message");
-            if (inputPassword === "#VAPEBOYZ") {
-                window.location.href = "main.html";
-            } else {
-                errorMessage.style.display = "block";
-            }
+    function checkPassword() {
+        var inputPassword = document.getElementById("password").value;
+        var errorMessage = document.getElementById("error-message");
+
+        if (inputPassword === "#VAPEBOYZ") {
+            sessionStorage.setItem("authenticated", "true");
+            window.location.href = "main.html";
+        } else {
+            errorMessage.style.display = "block";
         }
-    </script>
+    }
+</script>
 </body>
 </html>
