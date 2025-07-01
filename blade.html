@@ -279,5 +279,34 @@
             </div>
         </div>
     </div>
+
+    <script>
+        fetch('stock.json')
+            .then(response => response.json())
+            .then(stockData => {
+                const stock = stockData.nexa;
+                
+                document.querySelectorAll('.flavor-list button').forEach(button => {
+                    const flavor = button.textContent.trim().toLowerCase();
+                    
+                    if (flavor in stock) {
+                        const qty = stock[flavor];
+                
+                        const qtyDisplay = document.createElement('div');
+                        qtyDisplay.className = 'flavor-quantity';
+                        qtyDisplay.textContent = qty > 0 ? `${qty} En Stock` : 'AGOTADO';
+                        
+                        if (qty === 0) {
+                            button.classList.add('out-of-stock');
+                        }
+                        
+                        button.insertAdjacentElement('afterend', qtyDisplay);
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('ERROR AL CARGAR STOCK:', error);
+            });
+    </script>
 </body>
 </html>
