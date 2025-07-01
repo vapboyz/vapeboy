@@ -183,7 +183,7 @@
     </header>
 
     <div class="sort-section">
-        <a href="index.html" class="sort-button">LA WEB NO ESTA HECHA PARA PC</a>
+        <a href="index.html" class="sort-button">LA WEB NO ESTA HECHA PARA PC!</a>
     </div>
     <hr class="solid-border">
 
@@ -196,15 +196,17 @@
     </div>
 
     <script>
-        function checkPassword() {
-            var inputPassword = document.getElementById("password").value;
-            var errorMessage = document.getElementById("error-message");
-            if (inputPassword === "#VAPEBOYTEAM") {
-                window.location.href = "index.html";
-            } else {
-                errorMessage.style.display = "block";
-            }
+    function checkPassword() {
+        var inputPassword = document.getElementById("password").value;
+        var errorMessage = document.getElementById("error-message");
+
+        if (inputPassword === "#VAPEBOYZ") {
+            sessionStorage.setItem("authenticated", "true"); // Set auth flag
+            window.location.href = "main.html";
+        } else {
+            errorMessage.style.display = "block";
         }
-    </script>
+    }
+</script>
 </body>
 </html>
