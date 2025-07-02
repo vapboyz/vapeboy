@@ -5,15 +5,15 @@
     "mexico mango": 4,
     "strawberry kiwi": 8,
     "peach mango watermelon": 7,
-    "blueberry splash": 12,
+    "blueberry splash": 2,
     "forest berries": 5,
     "grape ice": 8,
     "mr blue": 6,
     "pink lemonade": 9,
-    "strawberry refresher": 10,
+    "strawberry refresher": 3,
     "icy mint": 0,
-    "blue razz ice": 11,
-    "strawberry banana": 12,
+    "blue razz ice": 1,
+    "strawberry banana": 2,
     "menthol": 3,
     "cherry bomb": 2,
     "green apple": 6,
@@ -22,11 +22,11 @@
   },
   "blade": {
     "cool mint": 3,
-    "miami mint": 11,
-    "kiwi dragon berry": 10,
+    "miami mint": 1,
+    "kiwi dragon berry": 1,
     "peach blue raspberry": 5,
     "passion fruit": 5,
-    "cherry bomb": 12,
+    "cherry bomb": 2,
     "peach": 2,
     "cherry watermelon": 4,
     "green apple": 4,
@@ -42,10 +42,19 @@
     "blueberry splash": 1
   },
   "nexa": {
-    "mint mancer": 14,
-    "berry siren": 12,
-    "peach luna": 9,
-    "blue wizard": 19,
-    "watermelon phantom": 16
+    "mint mancer": 4,
+    "berry siren": 3,
+    "peach luna":29,
+    "blue wizard": 1,
+    "watermelon phantom": 4
+  },
+  "packspod": {
+    "rainbow sorbet": 3,
+    "unicorn sherbet": 2,
+    "cucumber menthol": 1,
+    "gueva": 0,
+    "tabaco": 1
+    "jelly dulce": 2
+    "guava": 3
   }
 }
