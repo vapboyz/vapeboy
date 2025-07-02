@@ -290,7 +290,7 @@
         fetch('stock.json')
             .then(response => response.json())
             .then(stockData => {
-                const stock = stockData.nexa;
+                const stock = stockData.tyson;
                 
                 document.querySelectorAll('.flavor-list button').forEach(button => {
                     const flavor = button.textContent.trim().toLowerCase();
