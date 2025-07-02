@@ -53,8 +53,22 @@
     "unicorn sherbet": 2,
     "cucumber menthol": 1,
     "gueva": 0,
-    "tabaco": 1
-    "jelly dulce": 2
+    "tabaco": 1,
+    "jelly dulce": 2,
     "guava": 3
+  },
+  "tyson": {
+    "melonhead": 1,
+    "cherry cola": 1,
+    "pear party": 4,
+    "cherry melon berry": 3,
+    "orange soda": 2,
+    "lemon berry": 2,
+    "cranlemon": 5,
+    "seven up": 3,
+    "dessert punch": 6,
+    "pineapple kiwi berry": 1,
+    "banana split": 7,
+    "dragon berry": 2,
   }
 }
